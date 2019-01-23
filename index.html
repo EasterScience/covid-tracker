@@ -17,6 +17,7 @@ An AMP HTML tutorial - learn the different building blocks of an AMP HTML file. 
 <title>EASTER SCIENCE</title>
     <!-- The AMP runtime must be loaded as the second child of the `<head>` tag.-->
   <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
   <!--
     AMP HTML files require a canonical link pointing to the regular HTML. If no HTML version exists, it should point to itself.
   -->
@@ -59,11 +60,24 @@ An AMP HTML tutorial - learn the different building blocks of an AMP HTML file. 
 
     Check out the [other examples](/) to learn more about AMP.
   -->
-
-  <amp-img src="/img/amp.png"
+  <!-- Amp Image tag
+    <amp-img src="/img/amp.png"
 
   layout="responsive"
   alt="AMP"></amp-img>
+  -->
 
+  <!--iframe tage example
+  -->
+  <amp-iframe width="600"
+  height="400"
+  title="Google map pin on Googleplex, Mountain View CA"
+  layout="responsive"
+  sandbox="allow-scripts allow-same-origin allow-popups"
+  frameborder="0"
+  src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ2eUgeAK6j4ARbn5u_wAGqWA&key=AIzaSyCNCZ0Twm_HFRaZ5i-FuPDYs3rLwm4_848">
+</amp-iframe>
+
+  
 </body>
 </html>
